@@ -173,7 +173,7 @@ public class BottleProgressBar extends ProgressBar {
     /**
      * 是否开启波动动画
      */
-    boolean openFlash = true;
+    boolean openFlash = false;
     /**
      * 波浪个数
      */
