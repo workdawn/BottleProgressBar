@@ -453,6 +453,7 @@ public class BottleProgressBar extends ProgressBar {
                 }
                 wavePath.lineTo(mWidth, mHeight);
                 wavePath.lineTo(0, mHeight);
+                wavePath.lineTo(circleLeftCenterX, points[1]);
                 wavePath.close();
                 canvas.drawPath(wavePath, mWaterPaint);
                 if(animator != null && animator.isPaused()){
