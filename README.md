@@ -1,12 +1,14 @@
 # BottleProgressBar
 效果
 -----------
-###1
+
+###1.开启水波动画
 <br>
 ![bottleprogress_flash](https://github.com/workdawn/BottleProgressBar/raw/master/Screenshots/bottleprogress_flash.png)
 
 ---------
-###2
+
+###2.普通进度
 <br>
 ![bottleprogress_normal](https://github.com/workdawn/BottleProgressBar/raw/master/Screenshots/bottleprogress_normal.png)
 
