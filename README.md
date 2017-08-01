@@ -3,12 +3,12 @@
 -----------
 ###1
 <br>
-![bottleprogress_flash](https://github.com/workdawn/BottleProgressBar/raw/master/bottleprogress_flash.png)
+![bottleprogress_flash](https://github.com/workdawn/BottleProgressBar/raw/master/Screenshots/bottleprogress_flash.png)
 
 ---------
 ###2
 <br>
-![bottleprogress_normal](https://github.com/workdawn/BottleProgressBar/raw/master/bottleprogress_normal.png)
+![bottleprogress_normal](https://github.com/workdawn/BottleProgressBar/raw/master/Screenshots/bottleprogress_normal.png)
 
 ------
 <br>
