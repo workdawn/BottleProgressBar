@@ -19,8 +19,6 @@
         <attr name="waterColor" format="color"/>
         <!-- 光源颜色-->
         <attr name="brightColor" format="color"/>
-        <!-- 波浪个数-->
-        <attr name="waveCount" format="integer"/>
         <!-- 波浪宽度-->
         <attr name="waveWidth" format="integer"/>
         <!-- 波浪的高度-->

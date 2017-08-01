@@ -173,11 +173,11 @@ public class BottleProgressBar extends ProgressBar {
     /**
      * 是否开启波动动画
      */
-    boolean openFlash = false;
+    boolean openFlash = true;
     /**
      * 波浪个数
      */
-    int waveCount = 2;
+    int waveCount;
     /**
      * 浪的宽度
      */
@@ -222,7 +222,6 @@ public class BottleProgressBar extends ProgressBar {
         bottleColor = attributes.getColor(R.styleable.BottleProgressBar_bottleColor, bottleColor);
         waterColor = attributes.getColor(R.styleable.BottleProgressBar_waterColor, waterColor);
         gradientWaterColor = attributes.getColor(R.styleable.BottleProgressBar_brightColor, gradientWaterColor);
-        waveCount = attributes.getInteger(R.styleable.BottleProgressBar_waveCount, waveCount);
         openFlash = attributes.getBoolean(R.styleable.BottleProgressBar_openFlash, openFlash);
         flashDuration = attributes.getInt(R.styleable.BottleProgressBar_flashDuration, flashDuration);
         waveWidth = attributes.getInt(R.styleable.BottleProgressBar_waveWidth, waveWidth);
@@ -284,6 +283,8 @@ public class BottleProgressBar extends ProgressBar {
         bottleneckHeight = (int)(mHeight * proportion);
         bottleHeight = mHeight - bottleneckHeight;
 
+        waveCount = (int) Math.round(mWidth / waveWidth + 1.6);
+
         //圆外接矩形坐标
         int tempRectFTopX = (mWidth - (mHeight - bottleneckHeight - startPy)) / 2;
         int tempRectFTopY = bottleneckHeight;
@@ -315,16 +316,16 @@ public class BottleProgressBar extends ProgressBar {
         control5X = circleBottomCenterX - cubeStep;
         control5Y = circleBottomCenterY;
 
-        r1 = r - paintStroke - 2;
+        r1 = r - paintStroke - 1;
         float tempCubeStep = r1 * C;
         circleTopCenterXTemp = circleTopCenterX;
-        circleTopCenterYTemp = circleTopCenterY + paintStroke + 2;
-        circleLeftCenterXTemp = circleLeftCenterX + paintStroke + 2;
+        circleTopCenterYTemp = circleTopCenterY + paintStroke + 1;
+        circleLeftCenterXTemp = circleLeftCenterX + paintStroke + 1;
         circleLeftCenterYTemp = circleLeftCenterY;
-        circleRightCenterXTemp = circleRightCenterX - paintStroke - 2;
+        circleRightCenterXTemp = circleRightCenterX - paintStroke - 1;
         circleRightCenterYTemp = circleRightCenterY;
         circleBottomCenterXTemp = circleBottomCenterX;
-        circleBottomCenterYTemp = circleBottomCenterY - paintStroke - 2;
+        circleBottomCenterYTemp = circleBottomCenterY - paintStroke - 1;
 
         control1XTemp = circleTopCenterXTemp  + tempCubeStep;
         control1YTemp = circleTopCenterYTemp;
