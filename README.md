@@ -2,9 +2,9 @@
 效果
 -----------
 
-###1.开启水波动画
+###1.开启水波动画(火龙果 帮录)
 <br>
-![bottleprogress_flash](https://github.com/workdawn/BottleProgressBar/raw/master/Screenshots/bottleprogress_flash.png)
+![bottleprogress_flash](https://github.com/workdawn/BottleProgressBar/raw/master/Screenshots/bottleprogress_flash.gif)
 
 ---------
 
